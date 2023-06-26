@@ -4,19 +4,23 @@
 
 ## Table of Contents
 
-- [FHIR Implementation using XRPL Blockchain](#fhir-implementation-using-xrpl-blockchain)
-  - [Table of Contents](#table-of-contents)
-  - [Introduction](#introduction)
-  - [Key Features](#key-features)
-  - [System Design](#system-design)
-  - [Detailed Implementation](#detailed-implementation)
-  - [Technology Stack](#technology-stack)
-  - [Detailed Implementation](#detailed-implementation-1)
-    - [Frontend](#frontend)
-    - [Backend](#backend)
-  - [License](#license)
+-   [FHIR Implementation using XRPL Blockchain](#fhir-implementation-using-xrpl-blockchain)
+    -   [Table of Contents](#table-of-contents)
+    -   [Introduction](#introduction)
+    -   [Key Features](#key-features)
+    -   [System Design](#system-design)
+    -   [Detailed Implementation](#detailed-implementation)
+    -   [Technology Stack](#technology-stack)
+    -   [Detailed Implementation](#detailed-implementation-1)
+        -   [Frontend](#frontend)
+        -   [Backend](#backend)
+    -   [License](#license)
 
 ## Introduction
+
+<div classname="intro-image">
+<img src="./screenshots/landing-page.png"/>
+</div>
 
 This README serves as a comprehensive manual to our groundbreaking project aiming to establish the implementation of Fast Healthcare Interoperability Resources (FHIR) using the XRP Ledger (XRPL) blockchain. We strive to foster a secure, efficient, and seamless mechanism for the exchange of healthcare information, setting an unprecedented standard in the healthcare domain.
 
@@ -72,11 +76,19 @@ The following key aspects are covered in our detailed implementation:
 
 The frontend, crafted using React, presents a user-centric interface for seamless interaction. It utilizes several routes to guide user navigation throughout the application:
 
+![landing](./screenshots/landing-page.png)
+
 -   **Landing Page** (`/`): The landing page serves as the entry point for our application. It presents a broad overview of our service and its features.
+
+![login](./screenshots/login-page.png)
 
 -   **Login Page** (`/login`): This page is dedicated to returning users. They can enter their credentials here to access their accounts.
 
+![registration](./screenshots/registration-page.png)
+
 -   **Registration Page** (`/registration`): New users can navigate to this page to register themselves in our system. The page includes a form where users provide necessary information to create a new account.
+
+![dashboard](./screenshots/admin-panel.png)
 
 -   **Admin Panel** (`/admin-panel`): The admin panel provides a dashboard for administrators. This page presents a comprehensive view of the system and its elements, allowing administrators to manage users and data efficiently.
 
