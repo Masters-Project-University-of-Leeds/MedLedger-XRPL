@@ -1,5 +1,7 @@
 # MedLedger XRPL - FHIR Implementation using XRPL Blockchain
 
+> The project is currently undergoing active development in collaboration with professors from the University of Leeds, United Kingdom.
+
 ---
 
 ## Table of Contents
