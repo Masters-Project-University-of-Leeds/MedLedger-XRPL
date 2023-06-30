@@ -1,24 +1,24 @@
-# MedLedger XRPL - FHIR Implementation using XRPL Blockchain
+# 🏥 MedLedger XRPL - FHIR Implementation using XRPL Blockchain 🏥
 
-> The project is currently undergoing active development in collaboration with professors from the University of Leeds, United Kingdom.
+> 🎓 Collaboration: This project is currently undergoing active development in collaboration with professors from the University of Leeds, United Kingdom.
 
 ---
 
-## Table of Contents
+## 📚 Table of Contents
 
--   [FHIR Implementation using XRPL Blockchain](#fhir-implementation-using-xrpl-blockchain)
-    -   [Table of Contents](#table-of-contents)
-    -   [Introduction](#introduction)
-    -   [Key Features](#key-features)
-    -   [System Design](#system-design)
-    -   [Detailed Implementation](#detailed-implementation)
-    -   [Technology Stack](#technology-stack)
-    -   [Detailed Implementation](#detailed-implementation-1)
-        -   [Frontend](#frontend)
-        -   [Backend](#backend)
-    -   [License](#license)
+- [🏥 MedLedger XRPL - FHIR Implementation using XRPL Blockchain 🏥](#-medledger-xrpl---fhir-implementation-using-xrpl-blockchain-)
+  - [📚 Table of Contents](#-table-of-contents)
+  - [🎉 Introduction](#-introduction)
+  - [🌟 Key Features](#-key-features)
+  - [🖥️ System Design](#️-system-design)
+  - [Detailed Implementation](#detailed-implementation)
+  - [💻 Technology Stack](#-technology-stack)
+  - [📝 Detailed Implementation](#-detailed-implementation)
+    - [👨‍💻 Frontend](#-frontend)
+    - [⚙️ Backend](#️-backend)
+  - [📄 License](#-license)
 
-## Introduction
+## 🎉 Introduction
 
 <div classname="intro-image">
 <img src="./screenshots/landing-page.png"/>
@@ -28,7 +28,7 @@ This README serves as a comprehensive manual to our groundbreaking project aimin
 
 Back-end Repository Link: ![Click Here]("https://github.com/TusharPardhe/fhir-backend")
 
-## Key Features
+## 🌟 Key Features
 
 Our solution offers an array of salient features:
 
@@ -40,7 +40,7 @@ Our solution offers an array of salient features:
 
 -   **Patient Privacy**: We prioritize patient confidentiality. Blockchain technology ensures that patient data remains private, with access restricted to authorized entities, thereby enhancing trust in our system.
 
-## System Design
+## 🖥️ System Design
 
 The application comprises two main components:
 
@@ -54,7 +54,7 @@ These components operate independently, communicating via the network, promoting
 
 The application aligns with FHIR standards, ensuring healthcare data is structured and standardized for easy exchange between different systems. It integrates with the XRPL, enabling secure and decentralized storage and management of healthcare data. The application adheres to clean code principles, follows best practices for architecture, and employs tools like ESLint and Prettier for consistent coding style.
 
-## Technology Stack
+## 💻 Technology Stack
 
 Our project employs a robust technology stack:
 
@@ -70,13 +70,13 @@ Our project employs a robust technology stack:
 
 Certainly, we can expand the description to include the specifics of your frontend routes and backend API endpoints:
 
-## Detailed Implementation
+## 📝 Detailed Implementation
 
 The application adheres to FHIR standards to ensure healthcare data is structured and standardized, facilitating easy data exchange between disparate systems. Moreover, it integrates with the XRPL to provide a secure and decentralized mechanism for healthcare data management.
 
 The following key aspects are covered in our detailed implementation:
 
-### Frontend
+### 👨‍💻 Frontend
 
 The frontend, crafted using React, presents a user-centric interface for seamless interaction. It utilizes several routes to guide user navigation throughout the application:
 
@@ -98,7 +98,7 @@ The frontend, crafted using React, presents a user-centric interface for seamles
 
 Each route points to a specific React element that handles the rendering of respective pages.
 
-### Backend
+### ⚙️ Backend
 
 The backend, implemented with Node.js and Express.js, serves as a server processing API requests and returning the relevant responses. The backend API consists of the following endpoints:
 
@@ -112,6 +112,6 @@ The backend interacts with the XRPL for blockchain-specific operations, contribu
 
 This implementation aims to maintain adherence to clean code principles and follows the best architectural practices.
 
-## License
+## 📄 License
 
 This project is licensed under the [MIT License](LICENSE.md). The license provides all the details regarding permissions, conditions, and disclaimers.
