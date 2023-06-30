@@ -8,7 +8,7 @@
 
 ## 📚 Table of Contents
 
-- [🏥 MedLedger XRPL - FHIR Implementation using XRPL Blockchain 🏥](#-medledger-xrpl---fhir-implementation-using-xrpl-blockchain-)
+- [🏥 MedLedger XRPL - FHIR Implementation using XRPL Blockchain](#-medledger-xrpl---fhir-implementation-using-xrpl-blockchain-)
   - [📚 Table of Contents](#-table-of-contents)
   - [🎉 Introduction](#-introduction)
   - [🌟 Key Features](#-key-features)
