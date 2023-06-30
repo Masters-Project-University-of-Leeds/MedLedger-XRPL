@@ -1,8 +1,10 @@
-# 🏥 MedLedger XRPL - FHIR Implementation using XRPL Blockchain 🏥
+# 🏥 MedLedger XRPL - FHIR Implementation using XRPL Blockchain
 
 > 🎓 Collaboration: This project is currently undergoing active development in collaboration with professors from the University of Leeds, United Kingdom.
 
 ---
+---
+<br/>
 
 ## 📚 Table of Contents
 
@@ -18,6 +20,10 @@
     - [⚙️ Backend](#️-backend)
   - [📄 License](#-license)
 
+---
+---
+<br/>
+
 ## 🎉 Introduction
 
 <div classname="intro-image">
@@ -27,6 +33,10 @@
 This README serves as a comprehensive manual to our groundbreaking project aiming to establish the implementation of Fast Healthcare Interoperability Resources (FHIR) using the XRP Ledger (XRPL) blockchain. We strive to foster a secure, efficient, and seamless mechanism for the exchange of healthcare information, setting an unprecedented standard in the healthcare domain.
 
 Back-end Repository Link: ![Click Here]("https://github.com/TusharPardhe/fhir-backend")
+
+---
+---
+<br/>
 
 ## 🌟 Key Features
 
@@ -40,6 +50,10 @@ Our solution offers an array of salient features:
 
 -   **Patient Privacy**: We prioritize patient confidentiality. Blockchain technology ensures that patient data remains private, with access restricted to authorized entities, thereby enhancing trust in our system.
 
+---
+---
+<br/>
+
 ## 🖥️ System Design
 
 The application comprises two main components:
@@ -50,9 +64,17 @@ The application comprises two main components:
 
 These components operate independently, communicating via the network, promoting scalability and maintainability.
 
+---
+---
+<br/>
+
 ## Detailed Implementation
 
 The application aligns with FHIR standards, ensuring healthcare data is structured and standardized for easy exchange between different systems. It integrates with the XRPL, enabling secure and decentralized storage and management of healthcare data. The application adheres to clean code principles, follows best practices for architecture, and employs tools like ESLint and Prettier for consistent coding style.
+
+---
+---
+<br/>
 
 ## 💻 Technology Stack
 
@@ -70,11 +92,18 @@ Our project employs a robust technology stack:
 
 Certainly, we can expand the description to include the specifics of your frontend routes and backend API endpoints:
 
+---
+---
+<br/>
+
 ## 📝 Detailed Implementation
 
 The application adheres to FHIR standards to ensure healthcare data is structured and standardized, facilitating easy data exchange between disparate systems. Moreover, it integrates with the XRPL to provide a secure and decentralized mechanism for healthcare data management.
 
 The following key aspects are covered in our detailed implementation:
+
+---
+<br/>
 
 ### 👨‍💻 Frontend
 
@@ -98,6 +127,9 @@ The frontend, crafted using React, presents a user-centric interface for seamles
 
 Each route points to a specific React element that handles the rendering of respective pages.
 
+---
+<br/>
+
 ### ⚙️ Backend
 
 The backend, implemented with Node.js and Express.js, serves as a server processing API requests and returning the relevant responses. The backend API consists of the following endpoints:
@@ -111,6 +143,10 @@ The backend, implemented with Node.js and Express.js, serves as a server process
 The backend interacts with the XRPL for blockchain-specific operations, contributing to the system's overall security and efficiency.
 
 This implementation aims to maintain adherence to clean code principles and follows the best architectural practices.
+
+---
+---
+<br/>
 
 ## 📄 License
 
