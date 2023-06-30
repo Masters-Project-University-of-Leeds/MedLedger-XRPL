@@ -1,4 +1,4 @@
-# MedLedger - FHIR Implementation using XRPL Blockchain
+# MedLedger XRPL - FHIR Implementation using XRPL Blockchain
 
 ---
 
