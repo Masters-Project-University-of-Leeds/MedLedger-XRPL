@@ -13,7 +13,7 @@
   - [🎉 Introduction](#-introduction)
   - [🌟 Key Features](#-key-features)
   - [🖥️ System Design](#️-system-design)
-  - [Detailed Implementation](#detailed-implementation)
+  - [🎒 Detailed Implementation](#-detailed-implementation)
   - [💻 Technology Stack](#-technology-stack)
   - [📝 Detailed Implementation](#-detailed-implementation)
     - [👨‍💻 Frontend](#-frontend)
@@ -68,7 +68,7 @@ These components operate independently, communicating via the network, promoting
 ---
 <br/>
 
-## Detailed Implementation
+## 🎒 Detailed Implementation
 
 The application aligns with FHIR standards, ensuring healthcare data is structured and standardized for easy exchange between different systems. It integrates with the XRPL, enabling secure and decentralized storage and management of healthcare data. The application adheres to clean code principles, follows best practices for architecture, and employs tools like ESLint and Prettier for consistent coding style.
 
