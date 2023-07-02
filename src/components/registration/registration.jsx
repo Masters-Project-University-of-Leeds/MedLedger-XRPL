@@ -140,13 +140,19 @@ const NFTOrderComponent = () => {
                                     <Image src={qr.png} />
                                 </Message>
                             ) : (
-                                <Button primary loading={loading} onClick={handleQRGeneration}>
+                                <Button
+                                    primary
+                                    inverted
+                                    loading={loading}
+                                    disabled={loading}
+                                    onClick={handleQRGeneration}
+                                >
                                     Generate Request QR Code
                                 </Button>
                             )}
                         </div>
                     ) : (
-                        <Button primary loading={loading} onClick={handleGenerateAccount}>
+                        <Button primary inverted loading={loading} disabled={loading} onClick={handleGenerateAccount}>
                             Generate New Account
                         </Button>
                     )}
