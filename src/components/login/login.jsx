@@ -6,6 +6,7 @@ import { useCallback, useEffect, useState } from 'react';
 import { ApiCall } from '../../api/interceptor';
 import { FaRedo } from 'react-icons/fa';
 import { Image } from 'semantic-ui-react';
+import { decryptJSON } from '../../utils/app.utils';
 import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 
@@ -30,10 +31,15 @@ const Login = () => {
                         },
                     });
 
-                    if (response) {
-                        localStorage.setItem('token', response.data);
-                        navigate('/admin-panel');
+                    const decryptJSONData = decryptJSON(response.data);
+
+                    if (decryptJSONData.error) {
+                        toast.error('You are not authorized to access this page. Please try again.');
+                        return;
                     }
+
+                    localStorage.setItem('token', response.data);
+                    navigate(decryptJSONData.type.toLowerCase() === 'admin' ? '/admin-panel' : '/user-dashboard');
                 }
             } catch (error) {
                 console.log('Error in WebSocket connection:', error);

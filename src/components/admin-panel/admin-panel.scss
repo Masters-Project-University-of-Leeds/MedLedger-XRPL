@@ -4,44 +4,68 @@
 
     h1 {
         text-align: center;
-        color: #333;
         margin-bottom: 2em;
+        color: #4a5568; /* Darker color for contrast */
+        font-size: 2.5em; /* Larger size for emphasis */
+        font-weight: 600; /* Bold weight for emphasis */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle text shadow for depth */
+        text-transform: uppercase; /* Uppercase for stylistic choice */
+        letter-spacing: 1.5px; /* Letter spacing for a little breathability */
+        background: #ff5900; /* Gradient color background */
+        -webkit-background-clip: text; /* Clip background to the text */
+        -webkit-text-fill-color: transparent; /* Make the text transparent to show the background */
     }
 
-    .requests-table {
-        width: 100%;
-        border-collapse: collapse;
-
-        th,
-        td {
-            border: 1px solid #ddd;
-            padding: 0.5em 1em;
-            text-align: left;
+    .card-header {
+        margin-bottom: 20px;
+        text-align: left;
+        h2 {
+            margin: 0;
         }
 
-        th {
-            background-color: #4caf50;
-            color: white;
+        span {
+            font-weight: lighter;
+            color: gray;
+        }
+    }
+
+    .card {
+        background-color: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin: 20px 0;
+
+        span {
+            font-weight: lighter;
         }
 
-        .even-row {
-            background-color: #f2f2f2;
-        }
+        .requests-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            border-radius: 10px;
 
-        .odd-row {
-            background-color: #ddd;
-        }
+            th,td {
+                padding: 10px;
+                text-align: left;
+            }
 
-        .accept-button {
-            padding: 0.5em 1em;
-            background-color: #4caf50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+            th {
+                background-color: #f9f9f9;
+            }
 
-            &:hover {
-                background-color: #45a049;
+            .accept-btn {
+                background-color: #4caf50;
+                color: white;
+                border: none;
+                padding: 10px;
+                border-radius: 5px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #45a049;
+                }
             }
         }
     }

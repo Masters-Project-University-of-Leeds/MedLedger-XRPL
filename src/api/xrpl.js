@@ -7,7 +7,24 @@ export const generateAccount = () => {
     return new Promise(async (resolve, reject) => {
         try {
             const newAccount = await Wallet.generate();
-            resolve(newAccount);
+            toast.info('Generating account...', {
+                autoClose: 6000,
+            });
+            // eslint-disable-next-line no-undef
+            const client = new Client(process.env.XRPL_WSS_CLIENT);
+
+            // eslint-disable-next-line no-undef
+            if (process.env.NODE_ENV === 'development') {
+                // Connect to XRPL
+                await client.connect();
+                console.log('Connected to XRPL');
+                let x = await client.fundWallet(newAccount.classicAddress);
+                await client.disconnect();
+                resolve(x.wallet);
+            } else {
+                resolve(newAccount);
+            }
+
         } catch (error) {
             console.log('Error generating account:', error);
             reject(null);
@@ -22,7 +39,7 @@ export const generateNFTForAccount = async (account, requester) => {
             const client = new Client(process.env.XRPL_WSS_CLIENT);
 
             // Connect to XRPL
-            client.connect();
+            await client.connect();
             console.log('Connected to XRPL');
 
             const transaction = {
@@ -46,6 +63,8 @@ export const generateNFTForAccount = async (account, requester) => {
                 url: 'generateQR',
                 data: transaction,
             });
+
+            await client.disconnect();
 
             resolve(response);
         } catch (error) {
@@ -74,6 +93,14 @@ export const checkXummUUID = async (uuid) => {
 export const generateQRForPayment = async ({ account, name, hospital }) => {
     if (!account) {
         throw new Error('Account to pay is required');
+    }
+
+    if (!name) {
+        throw new Error('Name is required');
+    }
+
+    if (!hospital) {
+        throw new Error('Hospital is required');
     }
 
     return new Promise(async (resolve, reject) => {
@@ -111,8 +138,9 @@ export const generateQRForPayment = async ({ account, name, hospital }) => {
                 url: 'generateQR',
                 data: transaction,
             });
-            resolve(response);
             await client.disconnect();
+
+            resolve(response);
         } catch (error) {
             console.log('Error creating sell offer:', error);
             reject(null);
@@ -137,7 +165,7 @@ export function createWebSocketConnection(data) {
                     });
 
                     if (response.data.signed) {
-                        toast.success("Success ✅");
+                        toast.success("QR Code Scanned successfully ✅");
                         resolve(response);
                     } else {
                         toast.error("You've cancelled the request. Please try again.");

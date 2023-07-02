@@ -1,14 +1,12 @@
 .nft-order-container {
+    padding: 2em;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    background: #f4f4f4;
-    height: 100vh;
-    padding: 20px;
-    box-sizing: border-box;
+    align-items: center;
+    gap: 2em;
 
-    button {
+    .ui.button {
         margin: 20px 0;
         padding: 10px 20px;
         font-size: 1.2em;
@@ -29,29 +27,40 @@
         }
     }
 
-    .user-details {
-        margin-top: 1rem;
+    .general-information {
+        background-color: #ffffff;
+        border: 1px solid #ddd;
+        padding: 2em;
+        border-radius: .5em;
+        box-shadow: 0px 10px 20px rgba(0,0,0,0.19), 0px 6px 6px rgba(0,0,0,0.23);
+        width: 100%;
+        max-width: 600px;
+        word-wrap: break-word;
 
-        .user-details-input {
-            display: flex;
-            flex-direction: column;
+        h3 {
+            text-align: center;
+            color: #3f51b5;
+            font-size: 1.5em;
+            font-weight: 600;
+            margin-bottom: 1em;
+        }
 
-            .user-details-input-item {
-                display: flex;
-                flex-direction: column;
-                margin-bottom: 1rem;
+        .account-detail-list {
+            padding-left: 30px;
+            list-style-type: disc;
 
-                label {
-                    font-size: 1.2rem;
-                    margin-bottom: 0.5rem;
+            li {
+                line-height: 1.6;
+                color: #333;
+                font-size: 1.1em;
+
+                &:not(:last-child) {
+                    margin-bottom: 10px;
                 }
 
-                input {
-                    padding: 10px;
-                    font-size: 1.1rem;
-                    border-radius: 0px;
-                    border: none;
-                    border-bottom: 1px solid #d2d2d2;
+                &:first-letter {
+                    font-size: 1.2em;
+                    color: #3f51b5;
                 }
             }
         }
@@ -66,11 +75,11 @@
         align-items: center;
         justify-content: center;
         width: 60%;
-        padding: 20px;
+        padding: 30px;
         background: #ffffff;
-        box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
-        border-radius: 10px;
-        margin-bottom: 20px;
+        box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.05);
+        border-radius: 15px;
+        margin-bottom: 30px;
 
         .account-detail-list {
             text-align: left;
@@ -82,33 +91,13 @@
         }
 
         .Message {
-            margin: 10px 0;
+            margin: 20px 0;
         }
 
         img {
             width: 200px;
             height: 200px;
-            margin-top: 20px;
-        }
-    }
-
-    .general-information {
-        .info-title {
-            color: #333;
-            margin-bottom: 15px;
-        }
-
-        .account-detail-list {
-            padding-left: 30px;
-
-            li {
-                line-height: 1.6;
-                color: #333;
-
-                &:not(:last-child) {
-                    margin-bottom: 10px;
-                }
-            }
+            margin-top: 30px;
         }
     }
 
@@ -117,10 +106,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        
         img {
             width: 200px;
             height: 200px;
-            margin: 20px 0;
+            margin: 30px 0;
         }
     }
 }

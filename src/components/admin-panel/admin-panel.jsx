@@ -50,17 +50,23 @@ const AdminPanel = () => {
                     <Loader>Please wait...</Loader>
                 </Dimmer>
             ) : (
-                <table className="requests-table">
-                    <thead>
-                        <tr>
-                            <th>Account</th>
-                            <th>Name</th>
-                            <th>Hospital</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>{tableRows}</tbody>
-                </table>
+                <div className="card">
+                    <div className="card-header">
+                        <h2>Registration Requests</h2>
+                        <span>All the registration requests will be listed here</span>
+                    </div>
+                    <table className="requests-table">
+                        <thead>
+                            <tr>
+                                <th>Account</th>
+                                <th>Name</th>
+                                <th>Hospital</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>{tableRows}</tbody>
+                    </table>
+                </div>
             )}
         </div>
     );

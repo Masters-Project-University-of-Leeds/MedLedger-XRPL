@@ -7,7 +7,6 @@
     background-color: #fff;
     color: #222;
     position: relative;
-    overflow: hidden;
 
     // Gradient border bottom
     &:after {
@@ -27,6 +26,7 @@
         font-size: 1.5em;
         font-weight: bold;
         text-decoration: none;
+        cursor: pointer;
         color: #222;
 
         &:hover {
