@@ -27,7 +27,7 @@
 ## 🎉 Introduction
 
 <div classname="intro-image">
-<img src="./screenshots/landing-page.png"/>
+<img src="./screenshots/landing.gif"/>
 </div>
 
 This README serves as a comprehensive manual to our groundbreaking project aiming to establish the implementation of Fast Healthcare Interoperability Resources (FHIR) using the XRP Ledger (XRPL) blockchain. We strive to foster a secure, efficient, and seamless mechanism for the exchange of healthcare information, setting an unprecedented standard in the healthcare domain.
