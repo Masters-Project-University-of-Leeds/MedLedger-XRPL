@@ -105,6 +105,7 @@ const NFTOrderComponent = () => {
                             <Message positive>
                                 <Message.Header>New Account Details</Message.Header>
                                 <p>Account Address: {account.address}</p>
+                                <p>**Secret [KEEP IT SAFE]: {account.seed}</p>
                                 <p>Scan Me:</p>
                                 <QRCode value={account.seed} />
                             </Message>

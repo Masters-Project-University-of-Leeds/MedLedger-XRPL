@@ -8,12 +8,12 @@
 
 ## 📚 Table of Contents
 
-- [🏥 MedLedger XRPL - FHIR Implementation using XRPL Blockchain](#-medledger-xrpl---fhir-implementation-using-xrpl-blockchain-)
+- [🏥 MedLedger XRPL - FHIR Implementation using XRPL](#-medledger-xrpl---fhir-implementation-using-xrpl)
   - [📚 Table of Contents](#-table-of-contents)
   - [🎉 Introduction](#-introduction)
   - [🌟 Key Features](#-key-features)
   - [🖥️ System Design](#️-system-design)
-  - [🎒 Detailed Implementation](#-detailed-implementation)
+  - [🍃 Architecture](#-architecture)
   - [💻 Technology Stack](#-technology-stack)
   - [📝 Detailed Implementation](#-detailed-implementation)
     - [👨‍💻 Frontend](#-frontend)
@@ -68,9 +68,11 @@ These components operate independently, communicating via the network, promoting
 ---
 <br/>
 
-## 🎒 Detailed Implementation
+## 🍃 Architecture
 
-The application aligns with FHIR standards, ensuring healthcare data is structured and standardized for easy exchange between different systems. It integrates with the XRPL, enabling secure and decentralized storage and management of healthcare data. The application adheres to clean code principles, follows best practices for architecture, and employs tools like ESLint and Prettier for consistent coding style.
+The application aligns with FHIR standards, ensuring healthcare data is structured and standardized for easy exchange between different systems. It integrates with the XRPL, enabling secure and decentralized storage and management of healthcare data. The following diagram illustrates the architecture of our system:
+
+![architecture](./screenshots/fhir_flowchart.png)
 
 ---
 ---
