@@ -138,13 +138,174 @@ Each route points to a specific React element that handles the rendering of resp
 
 The backend, implemented with Node.js and Express.js, serves as a server processing API requests and returning the relevant responses. The backend API consists of the following endpoints:
 
--   **Generate QR** (`POST /generateQR`): This endpoint generates a QR code. The QR code is used for authentication purposes and facilitates secure login.
+-   **Generate QR** (`POST /generateQR`): This endpoint generates a QR code for a given request. The QR code is used for authentication purposes and facilitates secure login.
 
--   **Sign-In** (`POST /signIn`): This endpoint validates user credentials and handles the login process. Upon successful validation, users gain access to their respective accounts.
+    **Request Body**:
 
--   **Verify UUID** (`GET /verifyUUID`): This endpoint validates the user's unique identifier with the Xumm app. It plays a crucial role in maintaining the integrity of user data and preventing unauthorized access.
+    ```json
+    {
+      "TransactionType": "string",
+      "Account": "string",
+      ...
+    }
+    ```
 
-The backend interacts with the XRPL for blockchain-specific operations, contributing to the system's overall security and efficiency.
+    **Success Response**:
+
+    - **Condition**: If everything is OK and the user address exists.
+
+    ```json
+    {
+      "error": "User Address Exists"
+    }
+    ```
+
+    - **Condition**: If everything is OK and the user address does not exist.
+
+    ```json
+    {
+      "uuid": "string",
+      "next": {
+        "always": "string",
+        "no_push_msg_received": "string"
+      },
+      "refs": {
+        "qr_png": "string",
+        "qr_matrix": "string",
+        "websocket_status": "string"
+      },
+      "pushed": "boolean"
+    }
+    ```
+
+    **Error Response**:
+
+    - **Condition**: If there was no request body.
+
+    ```json
+    {
+      "error": "Bad Request"
+    }
+    ```
+
+    - **Condition**: If there was an internal server error.
+
+    ```json
+    {
+      "error": "Some Error Occured."
+    }
+    ```
+
+-   **Sign-In** (`POST /signIn`): This endpoint validates user credentials and handles the login process. Upon successful validation, users gain access to their respective accounts. It checks if the user address exists in the XRPL Oracle Account NFT List and returns a JWT token along with the user type (Admin/User).
+
+    **Request Body**:
+
+    ```json
+    {
+      "userAddress": "string"
+    }
+    ```
+
+    **Success Response**:
+
+    - **Condition**: If everything is OK and the user address is the admin address.
+
+    ```json
+    {
+      "token": "string",
+      "type": "Admin"
+    }
+    ```
+
+    - **Condition**: If everything is OK and the user address exists.
+
+    ```json
+    {
+      "token": "string",
+      "type": "User"
+    }
+    ```
+
+    **Error Response**:
+
+    - **Condition**: If the user address does not exist.
+
+    ```json
+    {
+      "error": "User Address Does Not Exist"
+    }
+    ```
+
+    - **Condition**: If there was an internal server error.
+
+    ```json
+    {
+      "error": "Some error occurred"
+    }
+    ```
+
+-   **Verify UUID** (`GET /verifyUUID`): This endpoint validates the user's unique identifier with the Xumm app. It fetches the payload status of a specific UUID from the Xumm platform and returns the response and meta data. It plays a crucial role in maintaining the integrity of user data and preventing unauthorized access.
+
+    **Request Parameters**:
+
+    ```json
+    {
+      "uuid": "string"
+    }
+    ```
+
+    **Success Response**:
+
+    ```json
+    {
+      "payload_uuidv4": "string",
+      "exists": "boolean",
+      "is_xapp": "boolean",
+      "user_token": "boolean",
+      "multisign": "boolean",
+      "submit": "boolean",
+      "destination": "string",
+      "resolved_at": "string",
+      "txid": "string",
+      "txblob": "string",
+      "payload": {
+        "application_uuidv4": "string",
+        "response": {
+          "account": "string",
+          "txjson": {
+            "TransactionType": "string",
+            "Account": "string",
+            ...
+          }
+        },
+        "custom_meta": {
+          "identifier": "string",
+          "blob": "string",
+          "instruction": "string"
+        }
+      }
+    }
+    ```
+
+    **Error Response**:
+
+    - **Condition**: If there was no UUID in the request parameters.
+
+    ```json
+    {
+      "error": "Some error occurred."
+    }
+    ```
+
+    - **Condition**: If there was an internal server error.
+
+    ```json
+    {
+      "error": "Some error occurred."
+    }
+    ```
+
+The backend interacts with the XRPL for blockchain-specific operations, contributing to the system's overall security and efficiency. It uses the `xrpl` and `xumm-sdk` libraries for interacting with the XRPL and Xumm platform respectively.
 
 This implementation aims to maintain adherence to clean code principles and follows the best architectural practices.
 
