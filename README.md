@@ -1,6 +1,6 @@
 # 🏥 MedLedger XRPL - FHIR Implementation using XRPL
 
-> 🎓 Collaboration: This project is currently undergoing active development in collaboration with professors from the University of Leeds, United Kingdom.
+> 🎓 Collaboration: The project is currently undergoing active development under the guidance of professors from the University of Leeds, United Kingdom.
 
 ---
 ---
@@ -30,9 +30,11 @@
 <img src="./screenshots/landing.gif"/>
 </div>
 
-This README serves as a comprehensive manual to our groundbreaking project aiming to establish the implementation of Fast Healthcare Interoperability Resources (FHIR) using the XRP Ledger (XRPL) blockchain. We strive to foster a secure, efficient, and seamless mechanism for the exchange of healthcare information, setting an unprecedented standard in the healthcare domain.
+<br/>
 
-Back-end Repository Link: ![Click Here]("https://github.com/TusharPardhe/fhir-backend")
+Welcome to MedLedger XRPL, a groundbreaking project that aims to revolutionize the healthcare industry by implementing Fast Healthcare Interoperability Resources (FHIR) using the XRP Ledger (XRPL) blockchain. Our mission is to provide a secure, efficient, and seamless platform for the exchange of healthcare information, thereby setting an unprecedented standard in the healthcare domain.
+
+The project is currently under active development in collaboration with the University of Leeds, United Kingdom. The back-end repository can be found ![here]("https://github.com/TusharPardhe/fhir-backend")
 
 ---
 ---
@@ -70,9 +72,9 @@ These components operate independently, communicating via the network, promoting
 
 ## 🍃 Architecture
 
-The application aligns with FHIR standards, ensuring healthcare data is structured and standardized for easy exchange between different systems. It integrates with the XRPL, enabling secure and decentralized storage and management of healthcare data. The following diagram illustrates the architecture of our system:
-
 ![architecture](./screenshots/fhir_flowchart.png)
+
+The application aligns with FHIR standards, ensuring healthcare data is structured and standardized for easy exchange between different systems. It integrates with the XRPL, enabling secure and decentralized storage and management of healthcare data. The following diagram illustrates the architecture of our system:
 
 ---
 ---
@@ -153,3 +155,5 @@ This implementation aims to maintain adherence to clean code principles and foll
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE.md). The license provides all the details regarding permissions, conditions, and disclaimers.
+
+We hope this comprehensive guide provides a clear understanding of our project. We are open to collaborations and contributions. Feel free to reach out for any queries or suggestions using this email: tpardhe@gmail.com
