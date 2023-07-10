@@ -34,7 +34,7 @@
 
 Welcome to MedLedger XRPL, a groundbreaking project that aims to revolutionize the healthcare industry by implementing Fast Healthcare Interoperability Resources (FHIR) using the XRP Ledger (XRPL) blockchain. Our mission is to provide a secure, efficient, and seamless platform for the exchange of healthcare information, thereby setting an unprecedented standard in the healthcare domain.
 
-The project is currently under active development in collaboration with the University of Leeds, United Kingdom. The back-end repository can be found ![here](https://github.com/Masters-Project-University-of-Leeds/fhir-backend)
+The project is currently under active development in collaboration with the University of Leeds, United Kingdom. The back-end repository can be found ![here](https://github.com/Masters-Project-University-of-Leeds/medledger-backend)
 
 ---
 ---
