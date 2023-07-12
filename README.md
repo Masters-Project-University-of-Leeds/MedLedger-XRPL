@@ -315,6 +315,6 @@ This implementation aims to maintain adherence to clean code principles and foll
 
 ## 📄 License
 
-This project is licensed under the [MIT License](LICENSE.md). The license provides all the details regarding permissions, conditions, and disclaimers.
+This project is licensed under the [MIT License](LICENSE). The license provides all the details regarding permissions, conditions, and disclaimers.
 
 We hope this comprehensive guide provides a clear understanding of our project. We are open to collaborations and contributions. Feel free to reach out for any queries or suggestions using this email: tpardhe@gmail.com
