@@ -12,6 +12,7 @@
   - [📚 Table of Contents](#-table-of-contents)
   - [🎉 Introduction](#-introduction)
   - [🌟 Key Features](#-key-features)
+  - [📽️ Project Specification](#️-project-specification)
   - [🖥️ System Design](#️-system-design)
   - [🍃 Architecture](#-architecture)
   - [💻 Technology Stack](#-technology-stack)
@@ -55,6 +56,12 @@ Our solution offers an array of salient features:
 ---
 ---
 <br/>
+
+## 📽️ Project Specification
+
+![Project Specification](./screenshots/PARDHE22-Spec.svg)
+
+The above specification provides a detailed overview of our project, including the problem statement, objectives, and scope. It also outlines the key features and the target audience of our solution. View the PDF version of the specification ![here](./documents/PARDHE22-Spec.pdf).
 
 ## 🖥️ System Design
 
