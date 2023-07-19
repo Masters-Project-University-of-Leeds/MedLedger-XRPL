@@ -63,6 +63,11 @@ Our solution offers an array of salient features:
 
 The above specification provides a detailed overview of our project, including the problem statement, objectives, and scope. It also outlines the key features and the target audience of our solution. View the PDF version of the specification ![here](./documents/PARDHE22-Spec.pdf).
 
+
+---
+---
+<br/>
+
 ## 🖥️ System Design
 
 The application comprises two main components:
